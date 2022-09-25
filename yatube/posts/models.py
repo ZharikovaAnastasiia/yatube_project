@@ -1,10 +1,10 @@
 from django.db import models
 from django.contrib.auth import get_user_model
-# Create your models here.
+
 User = get_user_model()
 
 class Group (models.Model):
-    title = models.TextField()
+    title = models.CharField()
     slug = models.SlugField()
     description = models.TextField()
 
